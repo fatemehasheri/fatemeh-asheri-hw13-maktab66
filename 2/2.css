@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    margin: 25px auto;
+    width: 50%;
+}
+
+ul li {
+    margin: 8px 0;
+}
+
+span.section {
+    transition: height 1s ease;
+    text-align: center;
+    width: 100%;
+    display: block;
+    background: #9b2176;
+    padding: 12px;
+}
+
+span.section:hover {
+    background: rgba(224, 135, 135, 0.9);
+}
+
+h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 40px;
+    margin-top: 30px;
+    color: #673477;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul .text {
+    padding-left: 16px;
+    overflow: hidden;
+    display: none;
+}
+
+
+

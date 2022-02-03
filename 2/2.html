@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./2.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <h1>menu</h1>
+        <ul>
+          <li>
+            <span class="section">section 1</span>
+            <p class="text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            </p>
+          </li>
+          <li>
+            <span class="section">section 2</span>
+            <p class="text">
+                Ornare aenean euismod elementum nisi quis eleifend quam. Tellus cras adipiscing enim eu turpis egestas. Pretium viverra suspendisse potenti nullam ac tortor
+            </p>
+          </li>
+          <li>
+            <span class="section">section 3</span>
+            <p class="text">
+                Pretium quam vulputate dignissim suspendisse in. Praesent tristique magna sit amet purus gravida. Enim diam vulputate ut pharetra.
+            </p>
+          </li>
+        </ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script >
+        $(function() {
+            $('.section').click(function() {
+                if ($(this).hasClass('show')) {
+                    $(this).removeClass('show')
+                    $(this).slideUp(400).slideDown()
+                } 
+                else {
+                    $(this).parent().parent().find('li .text').removeClass('show')
+                    $(this).parent().parent().find('li .text').slideUp(400)
+                    $(this).next().slideToggle(400)
+                }
+            })
+        })
+    </script>
+</body>
+</html>
